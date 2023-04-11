@@ -128,6 +128,6 @@ public class DriverDaoImpl implements DriverDao {
         String licenseNumber = resultSet.getString("license_number");
         String login = resultSet.getString("login");
         String password = resultSet.getString("password");
-        return new Driver(id, name, licenseNumber, login, password);
+        return new Driver(id, name, licenseNumber, password, login);
     }
 }

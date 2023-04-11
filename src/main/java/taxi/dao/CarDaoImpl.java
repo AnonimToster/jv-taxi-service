@@ -175,7 +175,7 @@ public class CarDaoImpl implements CarDao {
                 String licenseNumber = resultSet.getString("license_number");
                 String login = resultSet.getString("login");
                 String password = resultSet.getString("password");
-                drivers.add(new Driver(id, name, licenseNumber, login, password));
+                drivers.add(new Driver(id, name, licenseNumber, password, login));
             }
         } catch (SQLException e) {
             throw new DataProcessingException("Can't get drivers to car with id "

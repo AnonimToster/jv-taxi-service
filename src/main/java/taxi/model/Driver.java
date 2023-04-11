@@ -9,13 +9,17 @@ public class Driver {
     private String password;
     private String login;
 
-    public Driver(Long id, String name, String licenseNumber,
-                  String password, String login) {
-        this.id = id;
+    public Driver(String name, String licenseNumber, String password, String login) {
         this.name = name;
         this.licenseNumber = licenseNumber;
         this.password = password;
         this.login = login;
+    }
+
+    public Driver(Long id, String name, String licenseNumber,
+                  String password, String login) {
+        this(name, licenseNumber, password, login);
+        this.id = id;
     }
 
     public Long getId() {
