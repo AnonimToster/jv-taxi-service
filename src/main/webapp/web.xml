@@ -90,7 +90,7 @@
 
     <servlet>
         <servlet-name>createManufacturer</servlet-name>
-        <servlet-class>taxi.controller.manufacturer.CreateManufacturersController</servlet-class>
+        <servlet-class>taxi.controller.manufacturer.CreateManufacturerController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>createManufacturer</servlet-name>
